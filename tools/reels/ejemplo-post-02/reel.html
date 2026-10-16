@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "Geist"; src: url("../fonts/geist-sans-latin-400-normal.woff2"); font-weight: 400; }
+@font-face { font-family: "Geist"; src: url("../fonts/geist-sans-latin-500-normal.woff2"); font-weight: 500; }
+@font-face { font-family: "Geist"; src: url("../fonts/geist-sans-latin-600-normal.woff2"); font-weight: 600; }
+@font-face { font-family: "JBMono"; src: url("../fonts/jetbrains-mono-latin-400-normal.woff2"); font-weight: 400; }
+@font-face { font-family: "JBMono"; src: url("../fonts/jetbrains-mono-latin-500-normal.woff2"); font-weight: 500; }
+@font-face { font-family: "Playfair"; src: url("../fonts/playfair-display-latin-500-normal.woff2"); font-weight: 500; }
+:root {
+  --void: oklch(12.4% .013 273.4); --carbon: oklch(16.6% .019 274.5);
+  --electric: oklch(55.5% .243 268.8); --electric-soft: oklch(78% .13 268.8); --violet: oklch(57.4% .258 294.9);
+  --mist: oklch(78% .03 271.7); --white: oklch(97% .012 276.3); --hairline: oklch(100% 0 0 / .14);
+  --red: oklch(66% .2 25); --red-soft: oklch(80% .12 25);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #05060b; }
+body { font-family: "Geist", sans-serif; color: var(--white); position: relative; }
+
+.shot { position: absolute; inset: 0; overflow: hidden; }
+.shot img { position: absolute; left: 50%; top: 50%; width: 1080px; height: auto; transform-origin: 50% 50%; will-change: transform; }
+.shade { position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(5,6,11,.92) 0%, rgba(5,6,11,.72) 16%, rgba(5,6,11,.15) 34%, rgba(5,6,11,0) 50%, rgba(5,6,11,0) 74%, rgba(5,6,11,.55) 100%); }
+
+.brand { position: absolute; top: 150px; left: 72px; display: flex; align-items: center; gap: 16px; z-index: 5; }
+.mark { width: 58px; height: 58px; border: 1.5px solid var(--hairline); border-radius: 14px; display: grid; place-items: center;
+  font-family: "Playfair", serif; font-size: 38px; padding-top: 2px; background: rgba(12,13,22,.75); backdrop-filter: blur(6px); }
+.brand .name { font-weight: 600; font-size: 25px; letter-spacing: .02em; }
+.tagrec { position: absolute; top: 162px; right: 72px; z-index: 5; font-family: "JBMono", monospace; font-size: 19px; color: var(--mist);
+  border: 1.5px solid var(--hairline); border-radius: 999px; padding: 8px 16px; background: rgba(12,13,22,.6); }
+
+.cap { position: absolute; left: 72px; right: 72px; top: 270px; z-index: 6; }
+.cap .h { font-weight: 600; font-size: 84px; line-height: 1.04; letter-spacing: -0.035em; text-shadow: 0 4px 30px rgba(0,0,0,.55); }
+.cap .s { font-size: 40px; line-height: 1.3; color: var(--mist); margin-top: 18px; text-shadow: 0 2px 18px rgba(0,0,0,.7); }
+.hl { background: linear-gradient(90deg, oklch(66% .2 268.8), oklch(68% .22 294.9)); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: none; }
+
+/* schedule card */
+.card { position: absolute; left: 72px; width: 640px; top: 1040px; z-index: 6; transform-origin: 0 0; border-radius: 26px; overflow: hidden;
+  border: 1.5px solid var(--hairline); background: rgba(10,11,20,.86); backdrop-filter: blur(10px); box-shadow: 0 30px 80px rgba(0,0,0,.5); }
+.card .hd { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; border-bottom: 1.5px solid var(--hairline);
+  font-family: "JBMono", monospace; font-size: 19px; color: var(--mist); }
+.card .hd .st { position: relative; width: 250px; height: 24px; text-align: right; }
+.card .hd .st span { position: absolute; right: 0; top: 0; white-space: nowrap; }
+.grid { padding: 16px 24px 22px; display: grid; grid-template-columns: 92px repeat(7, 1fr); gap: 8px; align-items: center; }
+.grid .dh { font-family: "JBMono", monospace; font-size: 17px; color: var(--mist); text-align: center; }
+.grid .nm { font-size: 21px; color: var(--white); }
+.cell { height: 40px; border-radius: 9px; display: grid; place-items: center; font-family: "JBMono", monospace; font-size: 17px; font-weight: 500;
+  position: relative; overflow: hidden; }
+.cell .a, .cell .b, .cell .c { position: absolute; inset: 0; display: grid; place-items: center; border-radius: 9px; }
+.cell .a { background: oklch(30% .05 272); color: var(--mist); }
+.cell .b { background: oklch(40% .16 25 / .9); color: var(--red-soft); opacity: 0; }
+.cell .c { background: linear-gradient(135deg, oklch(50% .2 268.8), oklch(52% .22 294.9)); color: white; opacity: 0; }
+.nm.off { color: var(--red-soft); }
+
+/* end card */
+.end { position: absolute; inset: 0; z-index: 8; background:
+  radial-gradient(900px 800px at 90% 0%, oklch(55.5% .243 268.8 / .25), transparent 70%),
+  radial-gradient(800px 700px at 0% 100%, oklch(57.4% .258 294.9 / .15), transparent 70%), var(--void);
+  display: flex; flex-direction: column; justify-content: center; padding: 0 84px 160px; }
+.end .mk { width: 92px; height: 92px; border: 1.5px solid var(--hairline); border-radius: 22px; display: grid; place-items: center;
+  font-family: "Playfair", serif; font-size: 62px; padding-top: 4px; background: var(--carbon); }
+.end .q { font-weight: 600; font-size: 86px; line-height: 1.05; letter-spacing: -0.035em; margin-top: 54px; }
+.end .pill { align-self: flex-start; margin-top: 60px; background: var(--electric); color: white; font-weight: 600; font-size: 38px; padding: 28px 46px;
+  border-radius: 999px; box-shadow: 0 0 70px oklch(55.5% .243 268.8 / .5); }
+.end .url { font-family: "JBMono", monospace; font-size: 30px; margin-top: 34px; }
+.end .disc { font-family: "JBMono", monospace; font-size: 20px; color: var(--mist); margin-top: 60px; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<!-- shots -->
+<div class="shot" id="shotA"><img src="img/escena-1.jpg" alt=""></div>
+<div class="shot" id="shotB"><img src="img/escena-2.jpg" alt=""></div>
+<div class="shot" id="shotC"><img src="img/escena-3.jpg" alt=""></div>
+<div class="shade"></div>
+
+<div class="brand" data-at="-1"><div class="mark">K</div><div class="name">KAIRO AI</div></div>
+<div class="tagrec" data-at="-1">Recreación · caso real</div>
+
+<!-- captions -->
+<div class="cap" data-in="0" data-out="4">
+  <div class="h"><span data-at="-1">Domingo,</span> <span class="hl" data-at="0.35">22:40.</span></div>
+  <div class="s" data-at="1.0">Tercera vez que rehago el cuadrante.</div>
+</div>
+<div class="cap" data-in="4" data-out="10">
+  <div class="h" data-at="4.05">Una baja y toda la semana se descuadra.</div>
+</div>
+<div class="cap" data-in="10" data-out="16">
+  <div class="h" data-at="10.05">Con KAIRO AI, el cuadrante <span class="hl">se hace solo.</span></div>
+  <div class="s" data-at="10.6">Y se recalcula con cada cambio.</div>
+</div>
+<div class="cap" data-in="16" data-out="20">
+  <div class="h" data-at="16.05">El domingo vuelve a ser <span class="hl">domingo.</span></div>
+</div>
+
+<!-- schedule card (problem + solution) -->
+<div class="card" id="card">
+  <div class="hd"><span>Cuadrante recepción · sem. 43</span>
+    <div class="st"><span id="stOk" style="color:var(--mist)">5 personas</span><span id="stBad" style="color:var(--red-soft);opacity:0">⚠ 5 turnos sin cubrir</span><span id="stFix" style="color:var(--electric-soft);opacity:0">✓ Cuadrante actualizado</span></div>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<!-- end card -->
+<div class="end" id="end">
+  <div class="mk" data-at="20.15">K</div>
+  <div class="q" data-at="20.3">¿Qué tarea le roba el domingo a tu equipo?</div>
+  <div class="pill" data-at="20.6">Solicita una auditoría →</div>
+  <div class="url" data-at="20.9">kairoai.es</div>
+  <div class="disc" data-at="21.2">Recreación basada en un caso real.<br>Personajes ficticios · ilustraciones generadas con IA.</div>
+</div>
+
+<script>
+// ---------- build the schedule grid ----------
+const names = ["Marta", "Joan", "Aina", "Pere", "Lucía"];
+const days = ["L", "M", "X", "J", "V", "S", "D"];
+const plan = [ // M=mañana T=tarde N=noche ·=libre
+  "MMTT·NN", "TTMM·M·", "NN·MMTT", "·TNNMM·", "M·MTTN N"];
+const grid = document.getElementById("grid");
+grid.insertAdjacentHTML("beforeend", '<div></div>' + days.map(d => `<div class="dh">${d}</div>`).join(""));
+// Marta (row 0) goes on sick leave Mon-Thu -> 4 of her shifts + 1 knock-on conflict become uncovered
+const broken = [[0,0],[0,1],[0,2],[0,3],[3,4]];
+const fixedTo = {"0,0":"Pere","0,1":"Aina","0,2":"Pere","0,3":"Lucía","3,4":"Joan"};
+names.forEach((n, r) => {
+  grid.insertAdjacentHTML("beforeend", `<div class="nm" id="nm${r}">${n}</div>`);
+  const row = plan[r].replace(" ", "");
+  for (let c = 0; c < 7; c++) {
+    const v = row[c] || "·";
+    const isBroken = broken.some(([br, bc]) => br === r && bc === c);
+    grid.insertAdjacentHTML("beforeend",
+      `<div class="cell" ${isBroken ? `data-broken="${broken.findIndex(([br, bc]) => br === r && bc === c)}"` : ""}>
+        <div class="a">${v}</div><div class="b">${isBroken ? "—" : v}</div><div class="c">${isBroken ? "✓" : v}</div></div>`);
+  }
+});
+
+const clamp = x => Math.max(0, Math.min(1, x));
+const easeOut = x => 1 - Math.pow(1 - clamp(x), 3);
+const easeInOut = x => { x = clamp(x); return x < .5 ? 4*x*x*x : 1 - Math.pow(-2*x + 2, 3) / 2; };
+const P = (t, s, d) => easeOut((t - s) / d);
+
+function shot(id, t, a, b, z0, z1, x0, x1, y0, y1) {
+  const el = document.getElementById(id), img = el.querySelector("img");
+  const fadeIn = a <= 0 ? 1 : easeInOut((t - (a - 0.25)) / 0.5);
+  const fadeOut = 1 - easeInOut((t - (b - 0.25)) / 0.5);
+  el.style.opacity = Math.min(fadeIn, fadeOut);
+  const k = clamp((t - a) / (b - a));
+  const z = z0 + (z1 - z0) * k, x = x0 + (x1 - x0) * k, y = y0 + (y1 - y0) * k;
+  img.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(${z})`;
+}
+
+window.setTime = function (t) {
+  // Ken Burns per shot: slow push-in, drifting toward the point of interest
+  shot("shotA", t, 0, 10.2, 1.04, 1.16, 0, -60, 0, -40);
+  shot("shotB", t, 10, 16.2, 1.12, 1.03, -30, 20, -20, 10);
+  shot("shotC", t, 16, 20.3, 1.03, 1.12, 0, 0, 10, -30);
+
+  document.querySelectorAll("[data-in]").forEach(s => {
+    const a = +s.dataset.in, b = +s.dataset.out;
+    const i = a <= 0 ? 1 : P(t, a - 0.1, 0.35), o = 1 - easeInOut((t - (b - 0.35)) / 0.35);
+    s.style.opacity = (t < a - 0.1 || t > b) ? 0 : Math.min(i, o);
+    s.style.transform = `translateY(${(1 - i) * 30}px)`;
+  });
+  document.querySelectorAll("[data-at]").forEach(e => {
+    const p = P(t, +e.dataset.at, 0.5);
+    e.style.opacity = p; e.style.transform = `translateY(${(1 - p) * 24}px)`;
+  });
+
+  // schedule: break at 6.0 (Marta on leave), cells go red on the ticks 6.5..8.5, fixed 12.0..13.6
+  document.getElementById("nm0").classList.toggle("off", t >= 6.0 && t < 12.0);
+  document.querySelectorAll("[data-broken]").forEach(c => {
+    const i = +c.dataset.broken;
+    c.querySelector(".b").style.opacity = P(t, 6.5 + i * 0.5, 0.18) * (1 - P(t, 12.0 + i * 0.4, 0.25));
+    c.querySelector(".c").style.opacity = P(t, 12.0 + i * 0.4, 0.25);
+  });
+  document.getElementById("stOk").style.opacity = 1 - P(t, 8.6, 0.25);
+  document.getElementById("stBad").style.opacity = P(t, 8.6, 0.25) * (1 - P(t, 13.8, 0.25));
+  document.getElementById("stFix").style.opacity = P(t, 13.8, 0.3);
+
+  // card: in at 4.4, slides down and shrinks for shot B so it never covers faces, out at 15.6
+  const card = document.getElementById("card");
+  const cin = P(t, 4.3, 0.4), cout = 1 - easeInOut((t - 15.3) / 0.35), mv = 1;
+  card.style.opacity = (t < 4.3 || t > 15.65) ? 0 : Math.min(cin, cout);
+  card.style.transform = `translateY(${(1 - cin) * 30 + mv * 300}px) scale(${1 - 0.15 * mv})`;
+
+  // end card
+  document.getElementById("end").style.opacity = easeInOut((t - 19.8) / 0.45);
+};
+window.setTime(0);
+</script>
+</body>
+</html>
