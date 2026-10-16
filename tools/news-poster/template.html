@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "Geist"; src: url("../fonts/geist-sans-latin-400-normal.woff2"); font-weight: 400; }
+@font-face { font-family: "Geist"; src: url("../fonts/geist-sans-latin-500-normal.woff2"); font-weight: 500; }
+@font-face { font-family: "Geist"; src: url("../fonts/geist-sans-latin-600-normal.woff2"); font-weight: 600; }
+@font-face { font-family: "JBMono"; src: url("../fonts/jetbrains-mono-latin-400-normal.woff2"); font-weight: 400; }
+@font-face { font-family: "JBMono"; src: url("../fonts/jetbrains-mono-latin-500-normal.woff2"); font-weight: 500; }
+@font-face { font-family: "Playfair"; src: url("../fonts/playfair-display-latin-500-normal.woff2"); font-weight: 500; }
+
+:root {
+  --void: oklch(12.4% .013 273.4);
+  --carbon: oklch(16.6% .019 274.5);
+  --electric: oklch(55.5% .243 268.8);
+  --electric-soft: oklch(78% .13 268.8);
+  --violet: oklch(57.4% .258 294.9);
+  --mist: oklch(71.8% .043 271.7);
+  --white: oklch(96% .019 276.3);
+  --hairline: oklch(100% 0 0 / .09);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 1080px; height: 1350px; overflow: hidden; font-family: "Geist", sans-serif; color: var(--white);
+  background:
+    radial-gradient(900px 700px at 105% -5%, oklch(55.5% .243 268.8 / .22), transparent 70%),
+    radial-gradient(800px 700px at -10% 105%, oklch(57.4% .258 294.9 / .12), transparent 70%),
+    var(--void); }
+.grid { position: absolute; inset: 0; opacity: .5;
+  background-image: linear-gradient(var(--hairline) 1px, transparent 1px), linear-gradient(90deg, var(--hairline) 1px, transparent 1px);
+  background-size: 54px 54px;
+  -webkit-mask-image: radial-gradient(circle at 85% 8%, rgba(0,0,0,.7), transparent 50%); }
+.wrap { position: absolute; inset: 0; padding: 72px 80px 64px; display: flex; flex-direction: column; }
+
+/* masthead */
+.mast { display: flex; justify-content: space-between; align-items: center; padding-bottom: 28px; border-bottom: 1.5px solid var(--hairline); }
+.brand { display: flex; align-items: center; gap: 16px; }
+.mark { width: 56px; height: 56px; border: 1.5px solid var(--hairline); border-radius: 13px; display: grid; place-items: center;
+  font-family: "Playfair", serif; font-weight: 500; font-size: 37px; padding-top: 2px; background: var(--carbon); }
+.brand .name { font-weight: 600; font-size: 24px; letter-spacing: .02em; }
+.brand .sep { width: 1.5px; height: 28px; background: var(--hairline); }
+.brand .section { font-family: "JBMono", monospace; font-weight: 500; font-size: 22px; letter-spacing: .14em; color: var(--electric-soft); }
+.issue { font-family: "JBMono", monospace; font-size: 20px; color: var(--mist); text-align: right; line-height: 1.5; }
+
+.tag { margin-top: 40px; align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; font-family: "JBMono", monospace; font-size: 20px;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--white); border: 1.5px solid var(--hairline); border-radius: 999px; padding: 10px 20px; background: oklch(16.6% .019 274.5 / .7); }
+.tag .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--electric); box-shadow: 0 0 14px var(--electric); }
+
+h1 { font-weight: 600; font-size: $headline_size; line-height: 1.07; letter-spacing: -0.03em; margin-top: 26px; }
+h1 em { font-style: normal; background: linear-gradient(90deg, var(--electric), var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* data block */
+.data { margin-top: 40px; display: grid; grid-template-columns: 330px 1fr; gap: 24px; }
+.hero { border: 1.5px solid var(--hairline); border-radius: 26px; background: oklch(16.6% .019 274.5 / .8); padding: 28px; display: flex; flex-direction: column; align-items: center; }
+.ring { position: relative; width: 210px; height: 210px; }
+.ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring .val { position: absolute; inset: 0; display: grid; place-items: center; font-family: "JBMono", monospace; font-size: 58px; letter-spacing: -0.04em; }
+.big { font-family: "JBMono", monospace; font-size: 92px; letter-spacing: -0.04em; margin: 30px 0 10px;
+  background: linear-gradient(90deg, var(--electric), var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero .txt { font-size: 23px; line-height: 1.35; color: var(--mist); text-align: center; margin-top: 18px; }
+.side { display: flex; flex-direction: column; gap: 24px; }
+.stat { flex: 1; border: 1.5px solid var(--hairline); border-radius: 26px; background: oklch(16.6% .019 274.5 / .8); padding: 26px 30px; display: flex; flex-direction: column; justify-content: center; }
+.stat .v { font-family: "JBMono", monospace; font-size: 54px; letter-spacing: -0.04em;
+  background: linear-gradient(90deg, var(--electric), var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.stat .t { font-size: 23px; line-height: 1.35; color: var(--mist); margin-top: 6px; }
+
+/* insight */
+.insight { margin-top: 24px; border: 1.5px solid var(--hairline); border-left: 4px solid var(--electric); border-radius: 20px; background: oklch(16.6% .019 274.5 / .8); padding: 26px 30px; }
+.insight .k { font-family: "JBMono", monospace; font-size: 19px; letter-spacing: .1em; text-transform: uppercase; color: var(--electric-soft); }
+.insight .t { font-size: 27px; line-height: 1.4; margin-top: 10px; }
+
+.foot { margin-top: auto; }
+.source { font-family: "JBMono", monospace; font-size: 17px; line-height: 1.5; color: var(--mist); }
+.bar { margin-top: 20px; padding-top: 22px; border-top: 1.5px solid var(--hairline); display: flex; justify-content: space-between; align-items: center;
+  font-family: "JBMono", monospace; font-size: 22px; }
+.bar .url { color: var(--white); }
+.bar .cta { color: var(--mist); }
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="wrap">
+  <div class="mast">
+    <div class="brand"><div class="mark">K</div><div class="name">KAIRO AI</div><div class="sep"></div><div class="section">INFORMA</div></div>
+    <div class="issue">N.º $numero<br>$fecha</div>
+  </div>
+  <div class="tag"><span class="dot"></span>$categoria</div>
+  <h1>$titular</h1>
+  <div class="data">
+    <div class="hero">$hero_visual<div class="txt">$hero_texto</div></div>
+    <div class="side">$datos</div>
+  </div>
+  <div class="insight"><div class="k">Qué significa para tu empresa</div><div class="t">$lectura</div></div>
+  <div class="foot">
+    <div class="source">Fuente: $fuente</div>
+    <div class="bar"><span class="url">kairoai.es</span><span class="cta">Enlace en la bio →</span></div>
+  </div>
+</div>
+</body>
+</html>

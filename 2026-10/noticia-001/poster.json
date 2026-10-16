@@ -1,0 +1,13 @@
+{
+  "numero": "001",
+  "fecha": "17.10.2026",
+  "categoria": "Empresa · España",
+  "titular": "El 60% de las empresas españolas que usan IA sigue <em>en fase de pruebas</em>",
+  "hero": {"valor": 60, "sufijo": "%", "texto": "de las empresas que ya usan IA sigue experimentando"},
+  "datos": [
+    {"valor": "6%", "texto": "declara un uso significativo de la IA"},
+    {"valor": "20,3%", "texto": "de las empresas de 10 o más empleados ya usaba IA en 2025: casi el doble que un año antes"}
+  ],
+  "lectura": "Probar no es implantar. La ventaja llega cuando la IA entra en los procesos del día a día y se mide cuántas horas devuelve.",
+  "fuente": "Europa Press (Forbes España, 10/10/2026), conferencia Global Trends 2026 de AmChamSpain · dato de 2025: Eurostat"
+}
