@@ -13,11 +13,19 @@ python3 tools/news-poster/render_poster.py AAAA-MM/noticia-NNN/poster.json AAAA-
 - Cada noticia lleva `poster.json`, `poster.jpg` y `caption.txt` en su carpeta.
 
 ### Criterios editoriales
-- Noticia de IA de los últimos 2–3 días, útil o interesante para empresas (mejor si afecta a España/UE o a pymes).
-- Verificada en una fuente primaria o en un medio fiable; nunca solo en un agregador. La fuente va en el póster y en el texto.
-- Tono KAIRO: datos, sin hype, sin alarmismo. "Qué significa para tu empresa" en 1–2 frases.
+Objetivo: tener a la gente informada y consciente de que automatizar ya no puede esperar. Se busca el dolor real de una empresa y se explica cómo se resuelve, sin vender humo y sin hacer la pelota.
+
+Dos tipos de noticia, alternándolos:
+1. **Dato / tendencia** (como la N.º 001): estudios, adopción, costes, regulación práctica. Maqueta con `hero` + `datos`.
+2. **Impacto / titular**: noticias grandes que la gente comenta (caída de un proveedor de IA, un modelo que supera una prueba relevante, un lanzamiento que cambia precios, un fallo sonado de una empresa por usar mal la IA…). Maqueta con `entradilla` (+ `datos` si los hay).
+
+En los dos tipos, preferiblemente `problema` + `solucion`: el problema real que la noticia pone sobre la mesa, con un ejemplo concreto de empresa ("si tu atención al cliente depende de…"), y cómo se resuelve en la práctica. Si la noticia no da para un problema claro, usa `lectura`.
+
+Reglas:
+- Noticia de IA de los últimos 2–3 días. Verificada en fuente primaria o medio fiable; nunca solo en un agregador. La fuente va en el póster y en el texto.
+- Hechos exactos: nada de inflar cifras, ni alarmismo, ni titulares que la fuente no sostiene.
 - No repetir temas de los últimos pósters (ver carpetas anteriores).
-- Texto del post: gancho con el dato, contexto, lectura de KAIRO, pregunta, fuente, "Más en kairoai.es (enlace en la bio)", 5–7 hashtags con #KAIROinforma.
+- Texto del post: gancho con la noticia → el problema con un ejemplo real de empresa → cómo se resuelve (lo que hacemos en KAIRO, sin promesas) → pregunta al lector → fuente → "Más en kairoai.es (enlace en la bio)" → 5–7 hashtags con #KAIROinforma.
 
 ### Publicar
 1. Commit y push del póster a `main`.

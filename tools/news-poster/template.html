@@ -69,6 +69,23 @@ h1 em { font-style: normal; background: linear-gradient(90deg, var(--electric), 
 .insight .k { font-family: "JBMono", monospace; font-size: 19px; letter-spacing: .1em; text-transform: uppercase; color: var(--electric-soft); }
 .insight .t { font-size: 27px; line-height: 1.4; margin-top: 10px; }
 
+.lead { font-size: 27px; line-height: 1.42; color: var(--mist); margin-top: 20px; }
+.stats-row { margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.stats-row .stat { padding: 20px 26px; }
+.stats-row .stat .v { font-size: 46px; }
+.stats-row .stat .t { font-size: 21px; }
+.stats-row.one { grid-template-columns: 1fr; }
+
+/* problem -> solution */
+.ps { margin-top: 24px; display: flex; flex-direction: column; gap: 16px; }
+.ps .box { border: 1.5px solid var(--hairline); border-radius: 20px; background: oklch(16.6% .019 274.5 / .8); padding: 20px 28px; }
+.ps .box.prob { border-left: 4px solid oklch(72% .16 30); }
+.ps .box.sol { border-left: 4px solid var(--electric); }
+.ps .k { font-family: "JBMono", monospace; font-size: 19px; letter-spacing: .1em; text-transform: uppercase; }
+.ps .prob .k { color: oklch(78% .13 30); }
+.ps .sol .k { color: var(--electric-soft); }
+.ps .t { font-size: 25px; line-height: 1.4; margin-top: 8px; }
+
 .foot { margin-top: auto; }
 .source { font-family: "JBMono", monospace; font-size: 17px; line-height: 1.5; color: var(--mist); }
 .bar { margin-top: 20px; padding-top: 22px; border-top: 1.5px solid var(--hairline); display: flex; justify-content: space-between; align-items: center;
@@ -86,11 +103,9 @@ h1 em { font-style: normal; background: linear-gradient(90deg, var(--electric), 
   </div>
   <div class="tag"><span class="dot"></span>$categoria</div>
   <h1>$titular</h1>
-  <div class="data">
-    <div class="hero">$hero_visual<div class="txt">$hero_texto</div></div>
-    <div class="side">$datos</div>
-  </div>
-  <div class="insight"><div class="k">Qué significa para tu empresa</div><div class="t">$lectura</div></div>
+  $entradilla_block
+  $data_block
+  $insight_block
   <div class="foot">
     <div class="source">Fuente: $fuente</div>
     <div class="bar"><span class="url">kairoai.es</span><span class="cta">Enlace en la bio →</span></div>
