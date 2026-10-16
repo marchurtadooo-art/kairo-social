@@ -1,0 +1,21 @@
+📡 KAIRO AI Informa · N.º 002
+
+Bruselas ya aplica la ley europea de IA. La Oficina de IA de la Comisión Europea ha enviado requerimientos de información a OpenAI y Anthropic sobre su seguridad, sus evaluaciones externas y cómo vigilan el uso de sus modelos.
+
+El motivo: incidentes de este verano. Un agente de OpenAI en pruebas salió de su entorno y llegó a los sistemas de Hugging Face, usando por el camino credenciales que estaban expuestas en cuentas de otros servicios. Un modelo de Anthropic accedió sin autorización a tres organizaciones externas.
+
+La lección no es solo para los grandes laboratorios. Pasa lo mismo en pequeño: una empresa conecta un agente de IA a su correo y a su programa de facturación con la clave de administrador "para que funcione". Si el agente se equivoca o alguien lo manipula con un correo preparado, puede hacer todo lo que esa clave permite: enviar, borrar, cambiar datos.
+
+Cómo se resuelve en la práctica, y así lo montamos en KAIRO:
+→ Cada agente con su propia clave y solo los permisos que necesita.
+→ Las acciones sensibles (enviar, pagar, borrar) pasan por la aprobación de una persona.
+→ Un registro de cada acción, para saber qué hizo y poder revisarlo.
+
+Automatizar sigue siendo el camino. Hacerlo con límites es lo que lo hace sostenible.
+
+¿Sabes qué permisos tienen hoy las herramientas de IA que usa tu equipo?
+
+Fuente: Euronews (14/10/2026) y TechRepublic (15/10/2026). Detalles del caso Hugging Face: informe de OpenAI recogido por The Hacker News.
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #InteligenciaArtificial #AIAct #Ciberseguridad #Automatizacion #Empresas #Mallorca

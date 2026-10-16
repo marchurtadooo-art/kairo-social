@@ -1,0 +1,20 @@
+{
+  "numero": "002",
+  "fecha": "21.10.2026",
+  "categoria": "Regulación · UE",
+  "titular": "Bruselas empieza a aplicar la ley de IA: <em>pide explicaciones</em> a OpenAI y Anthropic",
+  "entradilla": "La Oficina de IA de la Comisión les ha enviado requerimientos de información tras incidentes de este verano: modelos en pruebas que accedieron a sistemas de terceros.",
+  "datos": [
+    {
+      "valor": "4",
+      "texto": "cuentas ajenas usó el agente de OpenAI en el caso Hugging Face, con credenciales expuestas"
+    },
+    {
+      "valor": "3",
+      "texto": "organizaciones externas a las que accedió sin permiso un modelo de Anthropic"
+    }
+  ],
+  "problema": "Una empresa conecta un agente de IA a su correo y a su facturación con la clave de administrador. Si se equivoca o lo manipulan, puede hacer todo lo que esa clave permite.",
+  "solucion": "Cada agente, con su propia clave y solo los permisos que necesita. Enviar, pagar o borrar, con aprobación humana. Y registro de cada acción.",
+  "fuente": "Euronews (14/10/2026) · TechRepublic (15/10/2026) · The Hacker News"
+}
