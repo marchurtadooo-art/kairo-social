@@ -16,7 +16,8 @@ from scipy.signal import butter, sosfilt, fftconvolve
 SR = 48000
 BEAT = 0.5
 BAR = 2.0
-DUR = 24.0
+BARS = int(os.environ.get("MUSIC_BARS", "12"))  # 12 = 24 s (reel 02); more bars extend the loop
+DUR = BARS * BAR
 N = int(SR * DUR)
 rng = np.random.default_rng(23)
 
@@ -24,6 +25,11 @@ AM9, FMAJ7, CMAJ7, G6 = [57, 60, 64, 67, 71], [53, 57, 60, 64], [55, 60, 64, 71]
 CHORDS = [AM9, FMAJ7, CMAJ7, G6, AM9, FMAJ7, CMAJ7, G6, AM9, FMAJ7, G6, AM9]
 ROOTS = [45, 41, 48, 43, 45, 41, 48, 43, 45, 41, 43, 45]
 DRUMS_START, DRUMS_END = 4.0, 20.0
+if BARS != 12:  # loop Am9-F-C-G6 and close with F -> Am9; drums drop out for the last two bars
+    loop, rloop = [AM9, FMAJ7, CMAJ7, G6], [45, 41, 48, 43]
+    CHORDS = [loop[i % 4] for i in range(BARS - 2)] + [FMAJ7, AM9]
+    ROOTS = [rloop[i % 4] for i in range(BARS - 2)] + [41, 45]
+    DRUMS_END = (BARS - 2) * BAR
 
 cfg = json.loads(os.environ.get("MUSIC_CFG", "{}"))
 TICKS = cfg.get("ticks", [])
@@ -100,7 +106,7 @@ for k, chord in enumerate(CHORDS[:-1]):
             keys.add(epiano(mtof(m + 12), n), k * BAR + off + idx * 0.012, gain=0.058 * vel, pan=-0.25 + 0.15 * idx)
 # final chord rung once, gently
 for idx, m in enumerate(sorted(CHORDS[-1])[1:]):
-    keys.add(epiano(mtof(m + 12), int(2.5 * SR)), 22.0 + idx * 0.02, gain=0.05, pan=-0.2 + 0.12 * idx)
+    keys.add(epiano(mtof(m + 12), int(2.5 * SR)), DUR - BAR + idx * 0.02, gain=0.05, pan=-0.2 + 0.12 * idx)
 
 # ---- bass: round sustained notes, two per bar ----
 for k, root in enumerate(ROOTS):
@@ -168,7 +174,7 @@ master = pad.st() * side + 1.0 * keys.st() + bass.st() * side + drums.st() + fx.
 master = hp(master, 30)
 master = np.tanh(master * 1.1) / 1.1
 fade = np.ones(N)
-fs = int(22.4 * SR)
+fs = int((DUR - 1.6) * SR)
 fade[fs:] = np.linspace(1, 0, N - fs) ** 1.6
 fade[: int(0.3 * SR)] = np.linspace(0, 1, int(0.3 * SR))
 master = master * fade
@@ -187,5 +193,5 @@ def rms_db(x):
 
 
 print("wrote", out)
-for s in range(0, 24, 4):
+for s in range(0, int(DUR), 4):
     print(f"{s:2d}-{s+4:2d}s  rms {rms_db(master[:, s*SR:(s+4)*SR]):6.1f} dBFS")

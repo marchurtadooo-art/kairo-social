@@ -1,0 +1,16 @@
+Así funciona por dentro la herramienta de cuadrantes que hicimos para un hotel de Palma.
+
+→ Generar: un clic y la semana sale completa, respetando convenio, descansos y mínimos de cobertura.
+→ Bajas: cuando alguien cae de baja, el sistema propone quién puede cubrir y qué cuesta cada opción. Decide la persona responsable, no la máquina.
+→ Publicar: un correo a cada persona del equipo y cada uno ve su horario en el móvil.
+
+Resultado en el hotel: más de 30 horas al mes que ya no se van en hacer cuadrantes.
+
+Es software a medida: se adapta a las reglas de cada empresa, no al revés.
+
+¿Cuántas horas se lleva el cuadrante en tu equipo? Te lo medimos en una auditoría de procesos.
+
+Producto real · nombres y datos de la demo, ficticios.
+🔗 kairoai.es (enlace en la bio)
+
+#Mallorca #Hoteles #Turnos #RecursosHumanos #Automatizacion #KAIROAI
