@@ -1,0 +1,24 @@
+{
+  "numero": "003",
+  "fecha": "23.10.2026",
+  "categoria": "Empresa · España",
+  "titular": "<em>1 de cada 3</em> empresas en España ya usa IA",
+  "hero": {
+    "valor": 33.6,
+    "sufijo": "%",
+    "texto": "de las empresas de 10 o más empleados usó IA a inicios de 2026"
+  },
+  "datos": [
+    {
+      "valor": "+12,5",
+      "texto": "puntos en un año: en 2025 era el 21,1%"
+    },
+    {
+      "valor": "21,4%",
+      "texto": "de las microempresas (menos de 10 empleados) también la usa"
+    }
+  ],
+  "problema": "Una gestoría teclea a mano cientos de facturas al mes. Otras ya las leen con IA y dedican ese tiempo a asesorar.",
+  "solucion": "Empezar por un proceso: medir cuánto tarda hoy, automatizar la lectura y que una persona revise las dudosas antes de contabilizar.",
+  "fuente": "INE · Encuesta de uso de TIC en las empresas (22/10/2026)"
+}
