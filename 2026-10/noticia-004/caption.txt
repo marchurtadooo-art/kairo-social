@@ -1,0 +1,21 @@
+📡 KAIRO AI Informa · N.º 004
+
+Una IA ha encontrado dos fallos críticos en PHP, el lenguaje con el que funcionan entre el 70% y el 80% de las webs. El 21 de octubre PHP publicó parches de urgencia: los fallos permiten tomar el control de un servidor sin necesidad de contraseña.
+
+Los descubrió la empresa de seguridad Calif con GPT-5.6 Sol, un modelo de OpenAI, y Wiz los confirmó por su cuenta. Lo encontró antes la IA que los atacantes, pero la ventaja duró poco: Cloudflare pasó de decenas de miles de intentos de ataque a millones en menos de un día. Las agencias de ciberseguridad de EE. UU. y Reino Unido pidieron actualizar ya o desconectar los sistemas que no se puedan parchear.
+
+El problema real no está en los laboratorios. Está en webs como esta: la tienda online o la web de reservas de un hotel que hizo una agencia hace cuatro años. Funciona, nadie la toca y nadie sabe qué versión de PHP usa ni a quién le toca actualizarla. Cuando la IA acelera tanto el descubrimiento de fallos como los ataques, revisar "cuando haya tiempo" ya no vale.
+
+Cómo se resuelve en la práctica, y así lo dejamos en los sistemas que montamos en KAIRO:
+→ Un inventario de lo que tienes publicado: webs, formularios, integraciones, y quién mantiene cada cosa.
+→ Actualizaciones automáticas donde se puede, empezando por las de seguridad.
+→ Alertas automáticas que avisan a una persona responsable cuando sale un aviso que te afecta.
+
+Si tu web está en un hosting gestionado, pregúntale hoy a tu proveedor si ya ha aplicado los parches.
+
+¿Sabes quién actualiza la web de tu empresa?
+
+Fuente: BleepingComputer y CyberScoop (21/10/2026), The Hacker News (23/10/2026).
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #Ciberseguridad #InteligenciaArtificial #PHP #Empresas #Mallorca #Automatizacion

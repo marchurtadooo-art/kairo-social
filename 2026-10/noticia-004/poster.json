@@ -1,0 +1,20 @@
+{
+  "numero": "004",
+  "fecha": "25.10.2026",
+  "categoria": "Ciberseguridad · Última hora",
+  "titular": "Una IA destapa dos fallos críticos en PHP, <em>el motor de la mayoría de webs</em>",
+  "entradilla": "PHP publicó parches de urgencia el 21 de octubre. Los fallos permiten tomar el control de un servidor sin contraseña y los encontró una empresa de seguridad con un modelo de OpenAI.",
+  "datos": [
+    {
+      "valor": "70–80%",
+      "texto": "de las webs con lenguaje conocido funcionan con PHP"
+    },
+    {
+      "valor": "Millones",
+      "texto": "de intentos de ataque detectados por Cloudflare en menos de un día"
+    }
+  ],
+  "problema": "Una tienda online o la web de reservas de un hotel, hecha hace años. Nadie sabe qué versión de PHP usa ni a quién le toca actualizarla.",
+  "solucion": "Saber qué tienes publicado y quién lo mantiene. Actualizaciones automáticas y alertas de seguridad que avisan a un responsable.",
+  "fuente": "BleepingComputer · CyberScoop (21/10/2026) · The Hacker News (23/10/2026)"
+}
