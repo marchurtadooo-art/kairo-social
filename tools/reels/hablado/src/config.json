@@ -1,0 +1,7 @@
+{
+  "faceFile": "media/face.mp4",
+  "placeholder": true,
+  "placeholderLoop": 260,
+  "src": { "w": 1080, "h": 1920 },
+  "face": { "cx": 540, "cy": 700 }
+}

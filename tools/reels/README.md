@@ -6,6 +6,7 @@ Vídeos verticales 1080×1920, 30 fps, H.264 + AAC, listos para la API de Instag
 - `render_reel.py <carpeta> stills t1 t2 …` → fotogramas de revisión; `render_reel.py <carpeta> video [musica.wav]` → `out/reel-sin-musica.mp4` y `out/reel-final.mp4`. La carpeta debe tener un `reel.html` con `window.setTime(t)`. Duración con `REEL_DURATION` (por defecto 24 s).
 - `music_chill.py out.wav` → **música por defecto** (aprobada por Marc el 17/10): 120 BPM a medio tiempo, piano eléctrico, bajo cálido, sin golpes. `MUSIC_CFG='{"ticks":[…],"tick_notes":[…],"fix_ticks":[…],"chime":20.6}'` para los "tic" sincronizados con la animación.
 - `music.py` → versión con más energía (la del Reel 01). Marc la encontró "demasiado de anuncio": no usar por defecto.
+- `hablado/` → **plantilla de vídeos de Marc hablando a cámara** (Remotion): cara que pasa entre pantalla completa, pantalla partida, tarjeta pequeña o sin cara; animaciones de interfaz por idea, subtítulos de 1–3 palabras y efectos de sonido. Transcribe, corta repeticiones y pausas, sigue la cara si graba andando y entrega a −14 LUFS más una copia ≤19 MB para Make. Instrucciones en `hablado/README.md`.
 - `ejemplo-post-02/` → reel de recreación con personajes: `reel.html` (escenas con zoom lento, textos, tarjeta de cuadrante animada, cierre) y `prep.py` (reescala las imágenes de Gemini a 1440 px).
 
 ## Proceso de vídeo con personajes

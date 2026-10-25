@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>5 comprobaciones · PHP</title>
+<style>
+@font-face { font-family: Geist; src: url(../../public/fonts/geist-sans-latin-400-normal.woff2); font-weight: 400; }
+@font-face { font-family: Geist; src: url(../../public/fonts/geist-sans-latin-500-normal.woff2); font-weight: 500; }
+@font-face { font-family: Geist; src: url(../../public/fonts/geist-sans-latin-600-normal.woff2); font-weight: 600; }
+@font-face { font-family: Geist; src: url(../../public/fonts/geist-sans-latin-700-normal.woff2); font-weight: 700; }
+@font-face { font-family: JB; src: url(../../public/fonts/jetbrains-mono-latin-500-normal.woff2); font-weight: 500; }
+@font-face { font-family: Playfair; src: url(../../public/fonts/playfair-display-latin-500-normal.woff2); font-weight: 500; }
+:root { --void:#07080f; --card:#11131f; --card2:#171a29; --line:rgba(255,255,255,.10); --text:#f3f4fb; --mist:#b5b9cc; --dim:#7f8399; --el:#4b5cf0; --soft:#a9b4ff; --bad:#ff5c6c; --good:#46d39a; --warn:#f2b84f; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; background: var(--void); }
+body { font-family: Geist, sans-serif; color: var(--text); position: relative; overflow: hidden; }
+.glow { position: absolute; inset: 0; background: radial-gradient(900px 600px at 50% 0%, rgba(75,92,240,.28), transparent 70%), radial-gradient(700px 500px at 100% 100%, rgba(138,77,255,.12), transparent 70%); }
+.wrap { position: relative; padding: 60px 72px 0; }
+.top { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 16px; }
+.k { width: 64px; height: 64px; border-radius: 18px; background: var(--card2); border: 1.5px solid rgba(110,124,255,.7); display: grid; place-items: center; box-shadow: 0 0 40px rgba(75,92,240,.45); font-family: Playfair, serif; font-size: 38px; padding-top: 3px; }
+.brand b { font-weight: 600; font-size: 28px; letter-spacing: -.01em; }
+.tag { font-family: JB, monospace; font-size: 20px; letter-spacing: .12em; color: var(--bad); border: 1.5px solid rgba(255,92,108,.45); background: rgba(255,92,108,.12); border-radius: 999px; padding: 9px 18px; }
+.eyebrow { margin-top: 40px; font-family: JB, monospace; font-size: 24px; letter-spacing: .14em; color: var(--soft); }
+h1 { margin-top: 12px; font-size: 66px; line-height: 1.02; letter-spacing: -.03em; font-weight: 700; }
+h1 em { font-style: normal; color: var(--soft); }
+.sub { margin-top: 14px; font-size: 26px; line-height: 1.35; color: var(--mist); max-width: 880px; }
+.list { margin-top: 30px; display: grid; gap: 12px; }
+.item { display: grid; grid-template-columns: 58px 1fr; gap: 22px; align-items: start; background: var(--card); border: 1.5px solid var(--line); border-radius: 22px; padding: 18px 26px; }
+.n { width: 58px; height: 58px; border-radius: 16px; background: rgba(75,92,240,.16); border: 1.5px solid rgba(169,180,255,.4); display: grid; place-items: center; font-family: JB, monospace; font-size: 28px; color: var(--soft); }
+.item h3 { font-size: 29px; font-weight: 600; letter-spacing: -.01em; line-height: 1.2; }
+.item p { margin-top: 4px; font-size: 23px; line-height: 1.36; color: var(--mist); }
+.item p code { font-family: JB, monospace; font-size: 21px; color: var(--good); background: rgba(70,211,154,.10); border-radius: 8px; padding: 2px 8px; white-space: nowrap; }
+.item.warn { border-color: rgba(242,184,79,.45); }
+.item.warn .n { background: rgba(242,184,79,.14); border-color: rgba(242,184,79,.5); color: var(--warn); }
+.foot { position: absolute; left: 72px; right: 72px; bottom: 48px; display: flex; justify-content: space-between; align-items: flex-end; }
+.foot .cta { font-size: 26px; font-weight: 600; }
+.foot .cta span { color: var(--soft); }
+.foot .legal { margin-top: 8px; font-size: 19px; color: var(--dim); }
+.foot .web { font-family: JB, monospace; font-size: 22px; letter-spacing: .08em; color: var(--mist); }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="wrap">
+  <div class="top">
+    <div class="brand"><div class="k">K</div><b>KAIRO AI</b></div>
+    <div class="tag">FALLO CRÍTICO · PHP</div>
+  </div>
+  <div class="eyebrow">// CHECKLIST PARA TU WEB</div>
+  <h1>5 comprobaciones<br>que hacemos en <em>KAIRO</em></h1>
+  <div class="sub">Pásale esta lista a quien te lleva la web. Si alguna respuesta es «no lo sé», trátala como un «no».</div>
+  <div class="list">
+    <div class="item"><div class="n">01</div><div><h3>¿Qué versión de PHP usa tu web?</h3><p>Tiene que ser una de las corregidas o posterior: <code>8.5.12</code> <code>8.4.27</code> <code>8.3.36</code> <code>8.2.35</code></p></div></div>
+    <div class="item"><div class="n">02</div><div><h3>¿Quién la mantiene y ha parcheado ya?</h3><p>Pregunta si se aplicaron los parches del 21 de octubre. Si nadie sabe quién la lleva, ese es el primer problema.</p></div></div>
+    <div class="item warn"><div class="n">03</div><div><h3>¿PHP 8.1 o anterior? No hay parche oficial</h3><p>Esas versiones ya no reciben actualizaciones de PHP. Pregunta si tu proveedor tiene un parche propio y planifica la subida de versión.</p></div></div>
+    <div class="item"><div class="n">04</div><div><h3>Confirma con tu hosting</h3><p>Que han actualizado PHP en tu servidor y reiniciado sus procesos. Sin reinicio puede seguir corriendo la versión vieja.</p></div></div>
+    <div class="item"><div class="n">05</div><div><h3>Copia de seguridad y revisión</h3><p>Haz un backup y revisa archivos nuevos, usuarios o actividad rara desde el 20 de octubre.</p></div></div>
+  </div>
+</div>
+<div class="foot">
+  <div><div class="cta">¿Dudas? <span>Responde a este mensaje.</span></div><div class="legal">Guía orientativa. No sustituye una revisión técnica de tu web.</div></div>
+  <div class="web">kairoai.es</div>
+</div>
+</body>
+</html>
