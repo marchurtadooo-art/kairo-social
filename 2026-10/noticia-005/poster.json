@@ -1,0 +1,24 @@
+{
+  "numero": "005",
+  "fecha": "28.10.2026",
+  "categoria": "Costes · Empresa",
+  "titular": "La factura de la IA obliga a <em>replantear proyectos</em>",
+  "hero": {
+    "valor": 89,
+    "sufijo": "%",
+    "texto": "de los responsables de TI ha limitado o rediseñado usos de IA por el aumento del consumo de tokens"
+  },
+  "datos": [
+    {
+      "valor": "98%",
+      "texto": "ha retirado algún despliegue por fallos, alucinaciones o comportamientos inesperados"
+    },
+    {
+      "valor": "45%",
+      "texto": "ha movido sus sistemas de IA por costes más altos o variables"
+    }
+  ],
+  "problema": "Un hotel pone una IA a leer y contestar todos los correos con el modelo más caro. En temporada alta el volumen se dispara, y la factura también.",
+  "solucion": "Medir el coste por tarea desde el primer día, usar modelos pequeños para lo sencillo y fijar límites de gasto con alertas.",
+  "fuente": "Cloudera · Wakefield Research, 1.500 responsables de TI (26/10/2026)"
+}

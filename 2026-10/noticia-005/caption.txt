@@ -1,0 +1,23 @@
+📡 KAIRO AI Informa · N.º 005
+
+La factura de la IA ya pesa en las decisiones. El 89% de los responsables de TI ha limitado o rediseñado usos de IA porque el consumo de tokens (lo que se paga por cada texto que la IA lee o escribe) no paraba de crecer.
+
+Es el dato principal de una encuesta de Wakefield Research para Cloudera a 1.500 responsables de TI de todo el mundo, publicada el 26 de octubre. Otros dos: el 98% ha tenido que retirar algún despliegue por fallos, alucinaciones o comportamientos inesperados, y el 45% ha movido sus sistemas de IA por costes más altos o variables.
+
+El problema no es solo de grandes empresas. Un ejemplo: un hotel pone una IA a leer y contestar todos los correos de reservas, y usa el modelo más potente para todo, también para un simple "¿a qué hora es el check-in?". En invierno la factura parece pequeña. En temporada alta el volumen de correos se multiplica, y la factura también. Nadie sabe cuánto cuesta cada respuesta hasta que llega el cargo.
+
+Cómo se resuelve en la práctica, y así lo montamos en KAIRO:
+→ Medir el coste por tarea desde el primer día, no solo el total del mes.
+→ Usar modelos pequeños y baratos para lo sencillo y reservar los grandes para lo difícil.
+→ Lo que se resuelve con una regla fija no pasa por la IA.
+→ Límites de gasto con alertas que avisan a una persona antes de que se dispare.
+→ Probar con casos reales antes de abrirlo a clientes.
+
+Automatizar sigue compensando. Lo que no compensa es automatizar sin saber cuánto cuesta cada tarea.
+
+¿Sabes cuánto te cuesta cada tarea que hace hoy la IA en tu empresa?
+
+Fuente: Cloudera, "The State of Enterprise AI 2026" (encuesta de Wakefield Research, septiembre de 2026), nota de prensa del 26/10/2026.
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #InteligenciaArtificial #Automatizacion #Empresas #Costes #Mallorca
