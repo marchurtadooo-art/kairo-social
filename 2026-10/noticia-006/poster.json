@@ -1,0 +1,20 @@
+{
+  "numero": "006",
+  "fecha": "29.10.2026",
+  "categoria": "Datos · Proveedores de IA",
+  "titular": "Un fallo en la IA de Cloudflare <em>mostró datos de otros clientes</em>",
+  "entradilla": "Durante 13 días, un error en un modelo de su servicio Workers AI hizo que 155 respuestas incluyeran datos de sesiones de otros clientes. Lo avisó un investigador externo y se corrigió el 9 de septiembre.",
+  "datos": [
+    {
+      "valor": "155",
+      "texto": "respuestas con datos de otros clientes, todas a textos muy largos"
+    },
+    {
+      "valor": "13 días",
+      "texto": "de exposición, del 27 de agosto al 9 de septiembre"
+    }
+  ],
+  "problema": "Una gestoría pasa nóminas y contratos enteros a una IA para resumirlos. Si el proveedor falla, esos datos acaban donde no deben.",
+  "solucion": "Enviar solo lo imprescindible y quitar antes nombres y DNI. Proveedor con contrato de datos en la UE y una persona que revise lo sensible.",
+  "fuente": "Cloudflare, informe del incidente (26/10/2026) · Unite.AI"
+}

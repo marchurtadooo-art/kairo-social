@@ -1,0 +1,22 @@
+📡 KAIRO AI Informa · N.º 006
+
+Cloudflare ha reconocido que su servicio de IA mostró datos de unos clientes a otros. Durante 13 días, del 27 de agosto al 9 de septiembre, un fallo en el modelo GLM-5.3 de Workers AI hizo que 155 respuestas incluyeran datos de sesiones ajenas.
+
+Lo publicó la propia Cloudflare el 26 de octubre. La causa: un error de configuración sumado a un fallo en el software que ejecuta el modelo. Solo afectó a peticiones con textos muy largos, lo avisó un investigador externo, se corrigió al día siguiente y la empresa dice no haber encontrado indicios de que alguien lo aprovechara.
+
+El problema no es Cloudflare: es que cualquier proveedor puede fallar. Un ejemplo: una gestoría que pasa nóminas y contratos enteros a una IA para resumirlos, con nombres, DNI y salarios incluidos. Si el proveedor tiene un fallo así, esos datos salen de su control, y ante sus clientes la responsable sigue siendo la gestoría.
+
+Cómo se resuelve en la práctica, y así lo montamos en KAIRO:
+→ Enviar a la IA solo lo imprescindible para la tarea.
+→ Quitar o sustituir nombres, DNI y cuentas antes de enviar, y volver a ponerlos al final.
+→ Elegir proveedores con contrato de tratamiento de datos y servidores en la UE.
+→ Que una persona revise lo sensible antes de que salga.
+
+Automatizar con IA sigue siendo el camino. Lo que no puede ser es enviar todo "porque así funciona".
+
+¿Sabes qué datos de tus clientes salen hoy de tu empresa hacia herramientas de IA?
+
+Fuente: Cloudflare, informe del incidente (26/10/2026), recogido por Unite.AI.
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #InteligenciaArtificial #ProteccionDeDatos #Ciberseguridad #Empresas #Mallorca #Automatizacion
