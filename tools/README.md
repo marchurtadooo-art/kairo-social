@@ -21,6 +21,8 @@ Dos tipos de noticia, alternándolos:
 
 En los dos tipos, preferiblemente `problema` + `solucion`: el problema real que la noticia pone sobre la mesa, con un ejemplo concreto de empresa ("si tu atención al cliente depende de…"), y cómo se resuelve en la práctica. Si la noticia no da para un problema claro, usa `lectura`.
 
+**Indicación de Marc (28/10/2026):** estudiar bien las noticias sobre IA y enfocar cada Informa en la noticia en sí: qué ha pasado, por qué importa y qué implica, antes de pasar a la solución. El post debe dejar a la gente reflexionando: una pregunta abierta que invite a pensar en su propia empresa, no solo a contestar sí o no. La noticia manda; KAIRO aparece como la forma de resolverlo, no como protagonista.
+
 Reglas:
 - Noticia de IA de los últimos 2–3 días. Verificada en fuente primaria o medio fiable; nunca solo en un agregador. La fuente va en el póster y en el texto.
 - Hechos exactos: nada de inflar cifras, ni alarmismo, ni titulares que la fuente no sostiene.
