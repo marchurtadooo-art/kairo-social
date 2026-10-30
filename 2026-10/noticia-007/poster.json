@@ -1,0 +1,24 @@
+{
+  "numero": "007",
+  "fecha": "31.10.2026",
+  "categoria": "Datos · Empresa",
+  "titular": "La IA rinde donde los datos <em>están en orden</em>",
+  "hero": {
+    "valor": 8,
+    "sufijo": "%",
+    "texto": "de las empresas dice tener sus datos totalmente listos para usar IA a escala"
+  },
+  "datos": [
+    {
+      "valor": "81%",
+      "texto": "de esas empresas ve un retorno amplio o sólido de la IA"
+    },
+    {
+      "valor": "12%",
+      "texto": "entre las que solo tienen sus datos listos en parte"
+    }
+  ],
+  "problema": "Una distribuidora pone una IA a contestar pedidos, pero cada cliente está en el ERP, en un Excel y en el correo, con datos distintos. La IA responde con el primero que encuentra.",
+  "solucion": "Primero, una sola fuente de datos por cliente y producto, sincronizada sola entre programas. Después, la IA trabaja sobre esa base.",
+  "fuente": "Dun & Bradstreet, encuesta a 10.000 empresas de 32 países (28/10/2026)"
+}

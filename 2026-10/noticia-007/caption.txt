@@ -1,0 +1,24 @@
+📡 KAIRO AI Informa · N.º 007
+
+Casi todas las empresas tienen ya algún proyecto de IA. Muy pocas tienen sus datos preparados para ello. Y ahí está la diferencia.
+
+Dun & Bradstreet ha preguntado a 10.000 empresas de 32 países. El 98% tiene iniciativas de IA en marcha, pero solo el 8% dice tener sus datos totalmente listos para usarla a escala. Entre esas empresas, el 81% ve un retorno amplio o sólido. Entre las que solo los tienen listos en parte, el 12%.
+
+Por qué importa: una IA no corrige el desorden, lo repite más rápido. Si la información de la empresa está duplicada, incompleta o repartida entre programas que no se hablan, la IA trabaja con eso.
+
+Un ejemplo que vemos a menudo: una distribuidora pone una IA a contestar pedidos. Pero cada cliente aparece en el ERP, en un Excel de comerciales y en hilos de correo, con direcciones, precios y condiciones distintas. La IA responde con el primero que encuentra. El cliente recibe un precio antiguo y alguien tiene que deshacer el error a mano.
+
+Cómo se resuelve en la práctica, y así lo hacemos en KAIRO:
+→ Localizar dónde vive hoy cada dato y cuál es el bueno.
+→ Una sola fuente por cliente y producto, sincronizada automáticamente entre programas.
+→ Reglas que avisan de duplicados o campos vacíos antes de que lleguen a la IA.
+→ Solo entonces, poner la IA a trabajar sobre esa base, empezando por un proceso.
+
+Ordenar los datos no es la parte vistosa. Es la que decide si la IA ahorra trabajo o lo crea.
+
+Si mañana una IA respondiera a tus clientes con los datos que tienes hoy, ¿de qué programa sacaría la información, y estarías seguro de que es la correcta?
+
+Fuente: Dun & Bradstreet, encuesta trimestral AI Momentum a 10.000 empresas de 32 países, nota de prensa del 28/10/2026.
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #InteligenciaArtificial #Datos #Automatizacion #Empresas #Mallorca
