@@ -1,0 +1,24 @@
+{
+  "numero": "008",
+  "fecha": "03.11.2026",
+  "categoria": "Datos · España",
+  "titular": "La brecha de la IA <em>sigue abierta</em>",
+  "hero": {
+    "valor": 70,
+    "sufijo": "%",
+    "texto": "de las grandes empresas españolas ya usa IA"
+  },
+  "datos": [
+    {
+      "valor": "30–35%",
+      "texto": "de las pymes, el doble que en 2024"
+    },
+    {
+      "valor": "61%",
+      "texto": "de las que no la usan: falta de recursos"
+    }
+  ],
+  "problema": "Una empresa de reformas de 10 personas monta cada presupuesto a mano con las notas de la visita. Sabe que se puede automatizar, pero no tiene informático y lo va dejando.",
+  "solucion": "Empezar por ese único proceso con herramientas que ya existen, medir horas antes y después y formar a quien lo usa.",
+  "fuente": "Banco de España, Documento Ocasional 2624 (28/10/2026)"
+}
