@@ -1,0 +1,10 @@
+{
+  "numero": "009",
+  "fecha": "05.11.2026",
+  "categoria": "Agentes de IA · Empresa",
+  "titular": "Apple avisa: los agentes de IA pueden <em>actuar sin permiso</em>",
+  "entradilla": "En su informe anual a la SEC, presentado el 3 de noviembre, Apple advierte de que los agentes de IA pueden comportarse de forma imprevista, exceder sus permisos y causar daños difíciles o imposibles de revertir.",
+  "problema": "Una agencia de viajes deja que un asistente de IA gestione cambios de reservas. Un correo mal interpretado y cancela la reserva equivocada: la plaza ya no vuelve.",
+  "solucion": "Que el agente prepare y una persona confirme lo que no se puede deshacer. Copias antes de cada cambio, límites por operación y registro de todo.",
+  "fuente": "Apple, informe anual 10-K ante la SEC (03/11/2026) · CNBC · Infobae"
+}

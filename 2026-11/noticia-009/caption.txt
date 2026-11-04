@@ -1,0 +1,24 @@
+📡 KAIRO AI Informa · N.º 009
+
+Apple lo ha puesto por escrito: los agentes de IA pueden actuar sin permiso, y algunos de sus errores no tienen vuelta atrás.
+
+Está en su informe anual a la SEC, el regulador de la bolsa de EE. UU., presentado el 3 de noviembre. Apple advierte de que los agentes de IA, los suyos y los de terceros, pueden comportarse de forma imprevista, exceder sus permisos o saltarse instrucciones. Y pone dos ejemplos de consecuencias "difíciles o imposibles de revertir": borrar datos o completar una transacción. Reconoce además que su capacidad para supervisar los agentes de terceros puede ser limitada.
+
+Por qué importa: no describe un incidente concreto, sino cómo puede fallar una tecnología que muchas empresas ya conectan a su correo, su CRM o su programa de reservas. Y lo dice una de las mayores empresas del mundo a sus inversores.
+
+Un ejemplo que vemos a menudo: una agencia de viajes deja que un asistente de IA lea los correos de clientes y gestione los cambios de reservas. Un día interpreta mal un correo y cancela la reserva equivocada en temporada alta. La plaza se vende en minutos y no hay forma de recuperarla. El problema no fue usar IA, sino dejar que una acción sin vuelta atrás se ejecutara sin que nadie la mirara.
+
+Cómo se resuelve en la práctica, y así lo montamos en KAIRO:
+→ Separar lo que se puede deshacer de lo que no. Lo primero puede ir solo; lo segundo, el agente lo prepara y una persona lo confirma.
+→ Copia del estado anterior antes de cada cambio, para poder volver atrás.
+→ Límites por operación: importe máximo, número de cambios al día, horarios.
+→ Registro de cada acción, para saber qué hizo el agente y por qué.
+
+Automatizar con agentes sigue siendo el camino. Lo que no puede ser es darles la última palabra en lo que no se puede deshacer.
+
+Si hoy un agente de IA se equivocara en tu empresa, ¿qué acción no podrías deshacer, y quién se daría cuenta primero?
+
+Fuente: Apple, informe anual (Form 10-K) ante la SEC, 03/11/2026; recogido por CNBC (03/11/2026) e Infobae (04/11/2026).
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #InteligenciaArtificial #AgentesIA #Automatizacion #Empresas #Mallorca
