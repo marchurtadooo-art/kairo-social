@@ -1,0 +1,24 @@
+📡 KAIRO AI Informa · N.º 010
+
+Las grandes empresas en España van a gastar más en inteligencia artificial. Pero solo una de cada cuatro tiene del todo claro hacia dónde va.
+
+Lo recoge un informe de Deloitte del que informó MuyComputerPRO el 5 de noviembre, con una encuesta a responsables de tecnología de 42 grandes organizaciones que operan en España. Solo el 26% tiene una hoja de ruta de IA plenamente definida; el 60% dice que aún la está elaborando. Mientras, el 74% preveía subir su presupuesto de IA entre un 5% y un 20% en los siguientes 12 meses. Y solo el 12% considera sus datos fiables, integrados y gobernados.
+
+Por qué importa: el dinero llega antes que el plan. Y si pasa en empresas con equipos de tecnología propios, en una pyme el riesgo de ir a ciegas es todavía mayor.
+
+Un ejemplo que vemos a menudo: en una empresa de distribución, comercial contrata un asistente para redactar correos, administración otro para leer facturas y dirección paga una licencia de chat para todos. Un año después hay herramientas que hacen lo mismo, ninguna conectada con el ERP, y nadie puede decir cuántas horas ha ahorrado cada una. A la hora de renovar, se renueva todo "por si acaso".
+
+Cómo se resuelve en la práctica, y así lo hacemos en KAIRO:
+→ Medir cuánto tarda hoy cada proceso y dónde se pierden más horas.
+→ Elegir dos o tres por impacto, no por la herramienta de moda.
+→ Un responsable por proyecto y un plan por trimestres.
+→ Comparar el antes y el después, y decidir qué se amplía y qué se deja.
+
+Invertir en IA tiene sentido. Invertir sin saber qué problema resuelve cada euro, no.
+
+Si hoy sumaras todo lo que tu empresa paga en herramientas de IA, ¿sabrías decir qué proceso ha mejorado con cada una?
+
+Fuente: Deloitte, «La transformación de las empresas a través de la IA» (Observatorio Tecnológico de la Transformación de las Empresas), recogido por MuyComputerPRO (05/11/2026).
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #InteligenciaArtificial #Estrategia #Automatizacion #Empresas #Mallorca

@@ -1,0 +1,24 @@
+{
+  "numero": "010",
+  "fecha": "07.11.2026",
+  "categoria": "Estrategia · España",
+  "titular": "Más presupuesto para IA, pero <em>sin hoja de ruta</em>",
+  "hero": {
+    "valor": 26,
+    "sufijo": "%",
+    "texto": "de las grandes organizaciones tiene una hoja de ruta de IA plenamente definida"
+  },
+  "datos": [
+    {
+      "valor": "74%",
+      "texto": "preveía subir su presupuesto de IA entre un 5% y un 20%"
+    },
+    {
+      "valor": "12%",
+      "texto": "tiene sus datos fiables, integrados y gobernados"
+    }
+  ],
+  "problema": "Cada departamento contrata su herramienta de IA por su cuenta. Un año después hay licencias duplicadas y nadie sabe qué ahorra horas.",
+  "solucion": "Medir cuánto tarda hoy cada proceso, elegir dos o tres por impacto, un responsable por proyecto y comparar antes y después.",
+  "fuente": "Deloitte, encuesta a 42 grandes empresas · MuyComputerPRO 05/11/2026"
+}
