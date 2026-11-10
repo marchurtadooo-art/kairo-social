@@ -1,0 +1,24 @@
+{
+  "numero": "011",
+  "fecha": "11.11.2026",
+  "categoria": "Productividad · Empleo",
+  "titular": "La IA ahorra tiempo, pero <em>¿a dónde va?</em>",
+  "hero": {
+    "valor": 19,
+    "sufijo": "%",
+    "texto": "de los empleados encuestados dice que el tiempo ahorrado va a trabajo de más valor"
+  },
+  "datos": [
+    {
+      "valor": "61%",
+      "texto": "dice que la IA le ahorra menos de 10 horas a la semana"
+    },
+    {
+      "valor": "15%",
+      "texto": "dice que no le ahorra un tiempo medible"
+    }
+  ],
+  "problema": "Cada persona redacta más rápido con IA, pero el proceso sigue igual: datos copiados a mano y esperas. El tiempo ganado se diluye.",
+  "solucion": "Medir el proceso entero, automatizar los pasos entre programas y decidir de antemano a qué se dedican las horas liberadas.",
+  "fuente": "Payscale, AI Workforce Impact Report · nota de prensa 10/11/2026"
+}
