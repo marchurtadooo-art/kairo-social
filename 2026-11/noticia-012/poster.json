@@ -1,0 +1,14 @@
+{
+  "numero": "012",
+  "fecha": "13.11.2026",
+  "categoria": "Ciberseguridad · Costes",
+  "titular": "Roban claves de IA en un proveedor cloud: <em>740.000 $ en consumo ajeno</em>",
+  "entradilla": "Railway, plataforma de alojamiento en la nube para desarrolladores, ha confirmado que unos atacantes buscaron sobre todo las claves de IA de sus clientes y las usaron para generar consumo fraudulento.",
+  "datos": [
+    {"valor": "740.000 $", "texto": "en uso fraudulento de IA con claves robadas, según estima Railway"},
+    {"valor": "100.000", "texto": "espacios de trabajo con datos que pudieron quedar expuestos, como máximo"}
+  ],
+  "problema": "Una tienda online guarda en su hosting la clave de IA de su chatbot: una sola para todo y sin límite de gasto. Si la roban, otros la usan y la factura le llega a la tienda.",
+  "solucion": "Una clave por uso con lo justo, límites de gasto y alertas de consumo raro, y un plan para cambiarlas en minutos si hay un aviso.",
+  "fuente": "Railway, informe del incidente (10/11/2026) · eSecurity Planet (12/11/2026)"
+}

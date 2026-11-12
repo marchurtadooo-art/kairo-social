@@ -1,0 +1,24 @@
+📡 KAIRO AI Informa · N.º 012
+
+Unos atacantes entraron en un proveedor de alojamiento en la nube y fueron directos a por las claves de IA de sus clientes. Resultado: unos 740.000 dólares en uso fraudulento de IA.
+
+Lo ha contado Railway, plataforma donde muchas empresas y desarrolladores alojan sus aplicaciones, en su informe del incidente del 10 de noviembre. La intrusión fue entre el 20 y el 21 de octubre, aprovechando un fallo en su sistema de compilación. Los atacantes llegaron a una credencial capaz de descifrar los secretos de los clientes y buscaron sobre todo claves de proveedores de IA. Railway calcula que los datos de hasta 100.000 espacios de trabajo pudieron quedar expuestos, como máximo, y se ha comprometido a cubrir lo que los proveedores de IA no devuelvan.
+
+Por qué importa: una clave de IA ya no es un dato técnico más. Es una tarjeta de crédito. Quien la tiene puede gastar a tu nombre, y los atacantes lo saben: no buscaban contraseñas, buscaban consumo.
+
+Un ejemplo que vemos a menudo: una tienda online pone un chatbot en su web y guarda la clave de IA en su hosting. Es la misma clave para el chatbot, para las descripciones de producto y para las pruebas de la agencia, y no tiene límite de gasto. Si esa clave se filtra, por un fallo del proveedor o por un descuido, otros la usan durante días y la factura llega a la tienda. Nadie lo nota hasta el cargo del mes.
+
+Cómo se resuelve en la práctica, y así lo montamos en KAIRO:
+→ Una clave por cada uso, con solo los permisos que necesita.
+→ Límites de gasto por clave y alertas cuando el consumo se sale de lo normal.
+→ Saber dónde está guardada cada clave y quién puede verla.
+→ Un procedimiento para revocarlas y cambiarlas en minutos si un proveedor avisa de un incidente.
+
+Automatizar con IA sigue siendo el camino. Pero cada clave que la hace funcionar merece el mismo cuidado que la tarjeta de la empresa.
+
+Si mañana tu proveedor avisara de que tus claves pueden estar expuestas, ¿sabrías cuántas tienes, dónde están y cuánto podrían gastar antes de que alguien se diera cuenta?
+
+Fuente: Railway, informe del incidente (10/11/2026), recogido por eSecurity Planet (12/11/2026) y BleepingComputer.
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #Ciberseguridad #InteligenciaArtificial #Automatizacion #Empresas #Mallorca
