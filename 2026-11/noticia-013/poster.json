@@ -1,0 +1,16 @@
+{
+  "numero": "013",
+  "fecha": "15.11.2026",
+  "categoria": "Última hora · Proveedores",
+  "titular": "Cae Microsoft 365 y arrastra a <em>ChatGPT y Claude</em> con él",
+  "entradilla": "El jueves 12 de noviembre fallaron Outlook, Teams y SharePoint en todo el mundo. Las conexiones de ChatGPT y Claude con Microsoft 365 fallaron con ellos.",
+  "datos": [
+    {
+      "valor": "+20 h",
+      "texto": "de errores en el conector de Claude con Microsoft 365 hasta las primeras señales de recuperación"
+    }
+  ],
+  "problema": "Un hotel usa una IA que lee las reservas de Outlook y las pasa a su programa. El jueves se para y nadie se entera hasta que llama un cliente.",
+  "solucion": "Saber de qué depende cada automatización, alertas si un flujo se para y una cola que guarda lo pendiente para retomarlo.",
+  "fuente": "Anthropic, página de estado (12-13/11/2026) · Inc. (13/11/2026)"
+}

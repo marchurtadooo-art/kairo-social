@@ -1,0 +1,24 @@
+📡 KAIRO AI Informa · N.º 013
+
+El jueves se cayó Microsoft 365. Y con él dejaron de funcionar muchas de las IA que trabajan sobre el correo de las empresas.
+
+Desde la tarde del 12 de noviembre, Outlook, Teams, SharePoint y Copilot fallaron en todo el mundo. OpenAI y Anthropic avisaron de que las conexiones de ChatGPT y Claude con Microsoft 365 daban errores: leer el correo, el calendario o buscar en SharePoint fallaba en la mayoría de peticiones. En el caso de Claude, pasaron más de 20 horas hasta las primeras señales de recuperación. Microsoft asegura que no hubo ningún ataque: fue un fallo técnico de su infraestructura.
+
+Por qué importa: la IA ya no trabaja sola. Se apoya en el correo, en el calendario, en los archivos de la empresa. Cuando falla uno de esos servicios, la automatización que depende de él se para, aunque la IA funcione perfectamente.
+
+Un ejemplo que vemos a menudo: un hotel tiene una IA que lee las solicitudes de reserva que llegan a Outlook y las pasa a su programa de gestión. El jueves por la tarde se para. No da ningún aviso: simplemente, las reservas dejan de entrar. Nadie se da cuenta hasta el día siguiente, cuando un cliente llama para confirmar la suya.
+
+Cómo se resuelve en la práctica, y así lo montamos en KAIRO:
+→ Un mapa de cada automatización: de qué servicios depende y qué pasa si uno cae.
+→ Alertas que avisan a una persona cuando un flujo deja de recibir trabajo, no solo cuando da error.
+→ Una cola que guarda lo pendiente y lo procesa sola cuando el servicio vuelve, sin perder nada.
+→ Un plan B sencillo y escrito para que el equipo siga trabajando a mano mientras tanto.
+
+Automatizar sigue siendo el camino. Pero cada proveedor del que dependes también es parte de tu sistema.
+
+Si mañana se cayera durante un día entero el servicio del que más depende tu empresa, ¿cuánto tardarías en enterarte y qué se quedaría parado?
+
+Fuente: página de estado de Anthropic (12-13/11/2026) e Inc. (13/11/2026).
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #InteligenciaArtificial #Microsoft365 #Automatizacion #Empresas #Mallorca
