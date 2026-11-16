@@ -1,0 +1,24 @@
+📡 KAIRO AI Informa · N.º 014
+
+Los agentes de IA ya no solo buscan productos: también los pagan.
+
+El 13 de noviembre OpenAI lanzó ChatGPT Wallet, creado con Visa, Mastercard y American Express. Sus agentes pueden llenar el carrito y pagar. El agente no ve los datos reales de la tarjeta: paga con un número sustituto de un solo uso, y cada compra la confirma la persona con Face ID o huella. De momento solo está disponible para usuarios Pro de ChatGPT en EE. UU.
+
+Por qué importa: la propia OpenAI reconoce que es el principio y que las compras no funcionarán si la web bloquea a los agentes o el sistema de pago no los reconoce. A las tiendas les pide algo concreto: publicar sus productos con precio y disponibilidad para que el agente pueda leerlos. Directivos y analistas no esperan volumen real hasta 2027 como pronto. Pero la dirección es clara: parte de los clientes llegará a través de un agente.
+
+Un ejemplo que vemos a menudo: una tienda de alquiler de bicis en Mallorca tiene los precios en un PDF y las reservas por WhatsApp. Un turista le pide a su asistente "alquílame dos bicis en Alcúdia para el sábado". El agente no puede saber si hay bicis ni cuánto cuestan, así que reserva en la tienda de al lado, que sí lo publica.
+
+Cómo se resuelve en la práctica, y así lo hacemos en KAIRO:
+→ Precios y disponibilidad en un solo sitio, sacados del programa de gestión y actualizados solos.
+→ Publicarlos en un formato que puedan leer la web, los buscadores y los agentes.
+→ Que las reservas entren directas al sistema, con confirmación al cliente y aviso al equipo.
+→ Revisar que la web no bloquee por error a quien quiere comprar.
+
+No hay que correr detrás de cada novedad, pero tener los datos ordenados sirve hoy para la web y mañana para los agentes.
+
+Si mañana un agente de IA intentara comprar o reservar en tu empresa, ¿encontraría precios y disponibilidad al día, o tendría que esperar a que alguien conteste un WhatsApp?
+
+Fuente: Payments Dive y Blog du Modérateur (16/11/2026), sobre el anuncio de OpenAI del 13/11/2026.
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #InteligenciaArtificial #AgentesIA #ComercioElectronico #Automatizacion #Empresas #Mallorca

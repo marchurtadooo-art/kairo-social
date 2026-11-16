@@ -1,0 +1,16 @@
+{
+  "numero": "014",
+  "fecha": "17.11.2026",
+  "categoria": "Última hora · Comercio",
+  "titular": "Los agentes de ChatGPT ya <em>pagan las compras</em>",
+  "entradilla": "OpenAI lanzó el 13 de noviembre ChatGPT Wallet: sus agentes pueden comprar en tiendas online con Visa, Mastercard y American Express. De momento, solo para usuarios Pro en EE. UU.",
+  "datos": [
+    {
+      "valor": "2027",
+      "texto": "año en que el sector espera, como pronto, ver volumen real de compras hechas por agentes de IA"
+    }
+  ],
+  "problema": "Una tienda de alquiler de bicis lleva precios en un PDF y la disponibilidad por WhatsApp. Si un agente busca bici para un cliente, no puede leerla y reserva en otra.",
+  "solucion": "Catálogo con precios y disponibilidad que se actualiza solo desde el programa de gestión, y pedidos que entran directos y con confirmación.",
+  "fuente": "Payments Dive (16/11/2026) · Blog du Modérateur (16/11/2026) · OpenAI"
+}
