@@ -1,0 +1,24 @@
+📡 KAIRO AI Informa · N.º 015
+
+Los atacantes ya no necesitan saber mucho de informática. Les basta con una IA que haga casi todo el trabajo.
+
+El FBI publicó el 13 de noviembre una alerta sobre ARTEX, una herramienta de código abierto en la que agentes de IA llevan a cabo cada fase de un ataque con poca intervención humana: rastrean la red, buscan puntos débiles, roban credenciales y avanzan hasta tener permisos de administrador. En los casos más rápidos, según el FBI, pasaron menos de tres horas entre el primer intento y ese acceso. A principios de noviembre había más de 1.600 consolas de ARTEX accesibles en internet, y el FBI cree que hay más. Ha llegado a banca, administración, tecnología, defensa y sanidad.
+
+Por qué importa: si el ataque está automatizado, una defensa que depende de que alguien revise el sistema "cuando pueda" llega tarde. El FBI no habla de fallos sofisticados, sino de lo de siempre: sistemas expuestos a internet, contraseñas olvidadas y permisos de más.
+
+Un ejemplo que vemos a menudo: una clínica tiene el acceso remoto a su programa de gestión abierto a internet. El proveedor que lo instaló hace tres años ya no trabaja con ellos, pero su usuario sigue activo. Si alguien entra con esa clave un sábado de madrugada, nadie lo ve hasta el lunes.
+
+Cómo se resuelve en la práctica, y así lo montamos en KAIRO:
+→ Un inventario de lo que la empresa tiene abierto a internet: webs, portales, accesos remotos.
+→ Revisar usuarios y claves, y dar de baja los de personas y proveedores que ya no están.
+→ Cada usuario con solo los permisos que necesita y verificación en dos pasos.
+→ Alertas automáticas de accesos fuera de lo normal que avisan a una persona en minutos, también en fin de semana.
+
+No se trata de tener miedo a la IA. Se trata de que, si el ataque va en automático, la vigilancia también.
+
+Si alguien entrara hoy en los sistemas de tu empresa, ¿cuánto tardaríais en daros cuenta, y quién recibiría el aviso?
+
+Fuente: FBI, alerta FLASH (13/11/2026), recogida por The Next Web (17/11/2026) e IBTimes (18/11/2026).
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #Ciberseguridad #InteligenciaArtificial #Automatizacion #Empresas #Mallorca

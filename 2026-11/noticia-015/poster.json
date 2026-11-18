@@ -1,0 +1,14 @@
+{
+  "numero": "015",
+  "fecha": "19.11.2026",
+  "categoria": "Última hora · Ciberseguridad",
+  "titular": "El FBI avisa: la IA ya <em>automatiza ataques</em>",
+  "entradilla": "Una alerta del FBI del 13 de noviembre describe ARTEX, una herramienta abierta en la que agentes de IA hacen casi todo el ataque: buscan fallos, roban credenciales y avanzan por la red.",
+  "datos": [
+    {"valor": "<3 h", "texto": "en los casos más rápidos, del primer intento al acceso con permisos de administrador"},
+    {"valor": "+1.600", "texto": "consolas de ARTEX expuestas en internet a principios de noviembre, según el FBI"}
+  ],
+  "problema": "Una clínica tiene el acceso remoto abierto a internet y la clave de un antiguo proveedor sigue activa. Si entran un sábado de madrugada, nadie lo ve hasta el lunes.",
+  "solucion": "Inventario de lo expuesto, credenciales viejas revocadas y alertas automáticas de accesos raros que avisan a una persona en minutos.",
+  "fuente": "FBI, alerta FLASH (13/11/2026) · The Next Web (17/11/2026) · IBTimes (18/11/2026)"
+}
