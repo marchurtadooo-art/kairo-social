@@ -1,0 +1,24 @@
+{
+  "numero": "016",
+  "fecha": "21.11.2026",
+  "categoria": "Agentes de IA · Gobierno",
+  "titular": "Agentes de IA en marcha, <em>sin freno de emergencia</em>",
+  "hero": {
+    "valor": 95,
+    "sufijo": "%",
+    "texto": "de las organizaciones encuestadas tuvo algún incidente con agentes de IA en un año"
+  },
+  "datos": [
+    {
+      "valor": "70%",
+      "texto": "cree que sus agentes operan dentro de límites seguros"
+    },
+    {
+      "valor": "15%",
+      "texto": "tiene un freno automático para parar a un agente que se descontrola"
+    }
+  ],
+  "problema": "Un agente que mete pedidos en el ERP aplica mal una regla y los duplica toda la noche. Nadie lo ve hasta las 9:00.",
+  "solucion": "Permisos mínimos, registro de cada paso, aprobación humana en lo importante y un interruptor para pararlo.",
+  "fuente": "Gartner, 16/11/2026 · encuesta a 298 responsables de TI, EE. UU. y R. U."
+}

@@ -1,0 +1,24 @@
+📡 KAIRO AI Informa · N.º 016
+
+Los agentes de IA ya trabajan dentro de muchas empresas. Lo que casi ninguna tiene es un botón para pararlos.
+
+Gartner presentó el 16 de noviembre en Londres una encuesta a 298 responsables de infraestructura y operaciones de TI de EE. UU. y Reino Unido (junio–julio de 2026). El 95% dice que su organización tuvo al menos un incidente relacionado con agentes de IA en los últimos 12 meses. El 70% cree que sus agentes operan dentro de límites seguros, pero solo el 15% tiene un freno automático para detener a un agente que entra en un error o en un bucle. Y el 57% reconoce que su gobierno de la IA es débil.
+
+Por qué importa: un agente no solo responde, actúa. Escribe en el ERP, envía correos, cambia pedidos. Cuando falla, no falla una vez: repite el error a la velocidad de una máquina hasta que alguien lo ve. Gartner prevé que, de aquí a 2028, el 40% de estas organizaciones que escalan la IA sufrirá una interrupción de un servicio crítico.
+
+Un ejemplo sencillo: una distribuidora pone un agente a leer los pedidos que llegan por correo y meterlos en el ERP. Una regla mal aplicada hace que duplique cada pedido. Pasa toda la noche y nadie se entera hasta las nueve, con almacén y facturación ya en marcha.
+
+Cómo se resuelve en la práctica, y así lo montamos en KAIRO:
+→ Cada agente con los permisos justos para su tarea, y una lista de qué agentes hay y qué hacen.
+→ Registro de cada paso, para saber qué hizo y por qué.
+→ Aprobación humana en las acciones de impacto: pagos, anulaciones, envíos a clientes.
+→ Límites y alertas: si algo se sale de lo normal, el agente se detiene y avisa.
+
+Automatizar con agentes tiene sentido. Hacerlo sin forma de pararlos, no.
+
+Si mañana un sistema de tu empresa empezara a equivocarse solo, ¿cuánto tardarías en darte cuenta y quién podría pararlo?
+
+Fuente: Gartner, nota de prensa del 16/11/2026 (IT Infrastructure, Operations & Cloud Strategies Conference, Londres).
+🔗 Más en kairoai.es (enlace en la bio)
+
+#KAIROinforma #InteligenciaArtificial #AgentesIA #Automatizacion #Empresas #Mallorca
